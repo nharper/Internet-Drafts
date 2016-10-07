@@ -267,6 +267,8 @@ struct {
         <t>The server is also negotiating the Renegotiation Indication <xref target="RFC5746" /> 
         TLS extension. This requirement only applies if the TLS server is configured to initiate or 
         allow renegotiation.</t>
+        <t>The client hello is not part of a renegotiation, or the server included the
+        "token_binding" extension in its previous server hello.</t>
       </list></t>
 
       <t>The server will ignore any key parameters that it does not recognize. The 

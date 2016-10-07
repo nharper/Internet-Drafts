@@ -433,7 +433,9 @@
             <t>TokenBindingType value contained in the TokenBinding.tokenbinding_type field;</t>
             <t>TokenBindingKeyParameters value contained in the TokenBindingID.key_parameters 
             field;</t>
-            <t>Exported keying material (EKM) value obtained from the current TLS connection.</t>
+            <t>Exported keying material (EKM) value obtained from the TLS session. If a
+            renegotiation has occurred on the current TLS connection, the EKM value from the
+            original TLS session (before renegotiation) is used.</t>
           </list>
         </t>
 
